@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEWIN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 10px;
+            color: w;
+        }
+
+        nav img {
+            border-radius: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            list-style: none
+        }
+
+        .hero {
+
+            position: relative;
+        }
+
+        ul li a {
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .font {
+            font-size: smaller;
+        }
+
+        .circle {
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            color: white;
+            background: black;
+            border: none;
+            display: inline-block;
+            margin: 10px 10px;
+        }
+    </style>
+
+    <!--Mobile View-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Tab Image Icon-->
+    <link rel="icon" href="images/">
+    <link href='./assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body style="background-color: whitesmoke">
+
+
+
+    <section class="pt-2 d-flex container-fluid" style="background-color: brown;">
+        <div class="col-md-4">
+            <input type="text" placeholder="TICKET STATUS CHECKER"
+                style="  border: none; width: 250px; height: 30px; border-radius: 5px;">
+        </div>
+        <div class="text-end col-md-4">
+            <marquee style="color: white;" class="pt-2">THE MORE YOU PLAY.THE MORE CHANCES OF WINNING</marquee>
+        </div>
+        <div class="col-md-4">
+            <i class="fa fa-home text-end" style="float: right; font-size: 50px; color: white;"></i>
+        </div>
+
+        </div>
+    </section>
+
+    <div class="hero">
+        <nav class="navbar navbar-expand-sm navbar-dark  bg-dark">
+            <img src="../img/Penguins.jpg" class="navbar-brand" alt="penguins" width="50px" height="50px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tog"
+                aria-controls="tog" aria-expanded="true" aria-label="sdfgfsd fd">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="collapse navbar-collapse navbar-nav" id="tog">
+                <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">HOW TO WIN</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">PRIZES</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">BECOME AN AGENT</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">DOWNLOAD APP</a></li>
+                <li class="nav-item"><button class="btn btn-danger btn-md rounded-thumbmail  ">PLAY NOW</button>
+            </ul>
+
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-lg-6">
+                <div class="card-deck">
+                    <div class="card" style="border: none; background: none;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <div class="card-text">
+                                    <div class="d-flex" style="margin-top: 50px;">
+
+                                        <p class="circle text-center text-light px-2 m-3">1</p>
+                                        <input type="text" style="box-shadow: 2px 2px 3px rgb(218, 218, 218);"
+                                            class="form-control" placeholder="Enter Your Phone Number" maxlength="11">
+                                    </div>
+                                    <br>
+
+                                    <div class="d-flex mt-3">
+
+                                        <p class="circle text-center mt-2">2</p>
+                                                                                                                                                                                                               
+                                        <div style="background: white;" class="container-fluid p-3">
+                                            <div class="row pt-2">
+                                                <div class="col-sm-3  ">
+                                                    
+                                                    <button class="btn btn-light mb-4 aaa"  style="background:#BEBDB8;" value="500">
+                                                        <label for="500">$500</label>
+                                                        <input type="radio" name="price" id="f">
+                                                    </button>
+
+                                                </div>
+                                                <div class="col-sm-3 ">
+
+                                                    <button class="btn btn-light mb-4 bbb" style="background: #BEBDB8;" value="2000">
+                                                        <label for="">$2,000</label>
+                                                        <input type="radio" name="price" id="tf">
+                                                    </button>
+
+                                                </div>
+                                                <div class="col-sm-3">
+
+                                                    <button class="btn btn-light mb-4 ccc"  style="background: #BEBDB8" value="5000">
+                                                        <label for="">$5,000</label>
+                                                        <input type="radio" name="price" id="jtf">
+                                                    </button>
+                                                </div>
+
+                                                <div class="col-sm-3">
+
+                                                    <button class="btn btn-light mb-4 ddd" style="background: #BEBDB8;display: flex;justify-content: center;align-items: center;gap: 10px;" value="10000">
+                                                        <label for="">$10,000</label>
+                                                        <input type="radio" name="price" id="jdr">
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                            <br>
+                                            <div class="justify-content-between d-flex ">
+                                                <div class="form-check form-switch">
+                                                    <input data-bs-toggle="collapse" data-bs-target="#vsc"
+                                                        class="form-check-input" type="checkbox">
+                                                    <label for="amount" class="form-check-label">Enter Other
+                                                        Amount</label>
+                                                    <div id="vsc" class="collapse">
+                                                        <input type="text" class="form-control typeinput"
+                                                            placeholder="Enter Amount">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-check form-switch justify-content-end">
+                                                    <input data-bs-toggle="collapse" data-bs-target="#demo"
+                                                        class="form-check-input" type="checkbox" name="amount" id="ccc">
+                                                    <label for="code" class="form-check-label">Enter Referral
+                                                        Code</label>
+                                                    <div class="collapse" id="demo">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Referral Code">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" style="background: #B9BBB6;">
+                            <h6 class="pt-3 pb-3" style="text-align: center; font-family: Georgia; font-weight: bold;">PRICE
+                                BUNDLE</h6>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card mb-4" style="background:#D9DDDC; text-align: center;">
+                                        <div class="card-body">
+
+                                            <h6 style="color: #CC7722; font-family: Verdana; font-weight: bold;">BRONZE
+                                            </h6>
+                                            <h5 style="font-family: Verdana; font-weight: bold;">$20,000</h5>
+                                            <p style="font-size: 10px;">BUY $20,000 TO GET</p>
+                                            <del style="font-weight:bold">40 Tickets</del>
+                                            <p style="font-weight: bold;">46 Tickets</p>
+                                            <button class="btn btn-success" style="border-radius: 20px;">CLOSED</button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+
+                            <div class="col-sm-4">
+                                <div class="card mb-4" style="background:#D9DDDC; text-align: center; border: 2px solid green;">
+                                    <div class="card-body">
+                                        <h6 style="color: #CC7722; font-family: Verdana; font-weight: bold;">BRONZE</h6>
+                                        <h5 style="font-family: Verdana; font-weight: bold;">$20,000</h5>
+                                        <p style="font-size: 10px;">BUY $20,000 TO GET</p>
+                                        <del style="font-weight:bold">40 Tickets</del>
+                                        <p style="font-weight: bold;">46 Tickets</p>
+                                        <button class="btn btn-success" style="border-radius: 20px;">CLOSED</button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="card mb-4" style="background:#D9DDDC; text-align: center;">
+                                    <div class="card-body">
+
+                                        <h6 style="color: #CC7722; font-family: Verdana; font-weight: bold;">BRONZE</h6>
+                                        <h5 style="font-family: Verdana; font-weight: bold;">$20,000</h5>
+                                        <p style="font-size: 10px;">BUY $20,000 TO GET</p>
+                                        <del style="font-weight:bold">40 Tickets</del>
+                                        <p style="font-weight: bold; ">46 Tickets</p>
+                                        <button class="btn btn-success" style="border-radius: 20px;">CLOSED</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        
+                        <br>
+                        <p style="color: #CC7722; font-family: monospace;">The more you play. The more your chances of winning</p>
+                        <br>
+                        <div class="justify-content-center text-center">
+                            
+                            <input type="checkbox">&nbsp;&nbsp;<label for="box">I am above 18 years and i accept the terms and conditions </label>
+                            <br><br>
+                            <button class="btn btn-success">CLOSED</button>
+
+                        </div>
+
+                        <br>
+                    </div>
+
+
+                </div>
+
+            </div>
+            
+
+
+            <div class="col-md-6 col-lg-6 col-sm-12">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Play Estimate</h6>
+                            <p class="card-text">
+
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" id="progress" style="width: 0%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-12 text-danger" style="font-size: 77%;">
+                                    <p class="m-0 d-flex justify-content-end">Amount selected for is</p>
+                                    <p class="m-0 d-flex justify-content-end amt_paid"></p>
+                                    <p class="d-flex justify-content-end chance"></p>
+
+
+                                </div>
+                            </div>
+                            <p style="font-weight: bold;font-size: 18px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; align-items: center; text-align: center;"
+                                class="justify-content-center">The <span class="text-danger">higher the
+                                    amount,</span>the more chances of winning the grand prize </p>
+                            <hr>
+                            <br>
+                            <h6 style="font-weight: bold;">Order Summary</h6>
+                            <br>
+                            <div class="container-fluid">
+                                <div class="d-flex justify-content-between p-2"
+                                    style="background-color: #D9DDDC; border-radius: 7px;">
+
+                                    <p class="text-danger chance_count " style="font-weight: 700;">0 Win Chance</p>
+
+                                    <div class="">
+                                        <p class=""
+                                            style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+                                            Play Amount</p>
+                                        <p class="amt_paid2"
+                                            style="font-weight: bolder; font-family: Arial, Helvetica, sans-serif;">
+                                            $
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="p-3 m-0" style="background-color: #D9DDDC;">
+                            <h5
+                                style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
+                                HOMEWIN UPDATES</h5><br>
+                            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;"><b>HomeWin</b></h4>
+                            <p style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">The more you
+                                play,the more your chances of winning</p>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <script src='./assets/bootstrap/js/bootstrap.bundle.min.js' type='text/javascript'></script>
+    <script src='./assets/bootstrap/js/jquery.min.js' type='text/javascript'></script>
+    <script>
+        let data =''
+        let progress  = document.querySelector('#progress');
+        let btn1 =  document.querySelector('.aaa');
+        let btn2 = document.querySelector('.bbb');
+        let btn3 = document.querySelector('.ccc');
+        let btn4 = document.querySelector('.ddd');
+
+        let chance_count = document.querySelector('.chance_count')
+        let chance = document.querySelector('.chance')
+        let amt_paid = document.querySelector('.amt_paid')
+        let amt_paid2 = document.querySelector('.amt_paid2')
+        let typeinput = document.querySelector('.typeinput')
+
+        btn1.addEventListener('click', () => {
+            let calc = btn1.value 
+            amt_paid.textContent = `$${calc}`
+            amt_paid2.textContent = `$${calc}`
+            Calculate(calc, progress,chance_count,chance)
+        })
+
+        btn2.addEventListener('click', () => {
+            let calc = btn2.value
+            amt_paid.textContent = `$${calc}`
+            amt_paid2.textContent = `$${calc}`
+            Calculate(calc, progress,chance_count,chance)
+        })
+
+        btn3.addEventListener('click', () => {
+            let calc = btn3.value
+            amt_paid.textContent = `$${calc}`
+            amt_paid2.textContent = `$${calc}`
+            Calculate(calc, progress, chance_count, chance)
+        })
+
+        btn4.addEventListener('click', () => {
+            let calc = btn4.value
+            amt_paid.textContent = `$${calc}`
+            amt_paid2.textContent = `$${calc}`
+            Calculate(calc, progress,chance_count,chance)
+
+        })
+
+        typeinput.addEventListener('keyup', () => {
+            let calc = typeinput.value
+            amt_paid.textContent = `$${calc}`
+            amt_paid2.textContent = `$${calc}`
+            Calculate(calc ,progress ,chance_count, chance)
+        })
+
+        function Calculate(param, ans, counter, counter2, data2) {
+            param = (param / 100) / 5
+            if (param >= 95) {
+                let data = ans.style.width = '99.9%'
+                ans.textContent = '99.9%'
+            }  else {
+                let data = ans.style.width = `${param}%`
+                ans.textContent = `${param}%`
+            }
+            counter.textContent = `${param} win chance`
+            counter2.textContent = `you have ${param} chance`
+            return data
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

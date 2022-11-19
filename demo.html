@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect online.offline status</title>
+
+     <!--Mobile View-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!--Tab Image Icon-->
+     <link rel="icon" href="images/">
+     <link href='./assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+     
+    <script src='./assets/bootstrap/js/bootstrap.bundle.min.js' type='text/javascript'></script>
+    <script src='./assets/bootstrap/js/jquery.min.js' type='text/javascript'></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: sans-serif;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: #e6e6e6;
+            justify-content: center;
+            }
+        .wrapper{
+            padding: 20px;
+            border-radius: 5px;
+            background: white;
+            border-left: 5px solid red;
+            display: flex;
+            align-items: center;
+        }
+        .no_wifi{
+            background: red;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .jpg1{
+            width: 30px;
+            height: 30px;
+        }
+        h1{
+            margin-left: 20px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        p{
+            margin-left: 20px;
+            font-size: 15px;
+            color: grey;
+        }
+        .cross{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            background: lightgrey;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .jpg2{
+            height: 26px;
+            width: 26px;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div class="wrapper">
+        <div class="no_wifi">
+            <img src="C:\xampp\htdocs\roqeebatclass\img\Penguins.jpg" class="jpg1">
+        </div>
+        <div>
+            <h1>offline</h1>
+            <p>You are offline now!</p>
+        </div>
+        <div class="cross">
+            <img src="C:\xampp\htdocs\roqeebatclass\img\Chrysanthemum.jpg" class="jpg2">
+        </div>
+    </div>
+
+    <script src='./assets/bootstrap/js/jquery.min.js' type='text/javascript'></script>
+    <script>
+        $(document).ready(function() {
+            $(".cross").click(function(){
+                $(".wrapper").hide();
+                $(".wrapper").attr('class','text');
+            });
+            setInterval(function()  {
+                if(navigator.onLine==false){
+                    $(".wrapper").show();
+                } else{
+                    $(".wrapper").hide();
+                    $(".text").attr('class','wrapper');
+                }
+            }, 1000);
+        });
+    </script>
+    
+</body>
+</html>
